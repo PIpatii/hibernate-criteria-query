@@ -1,0 +1,15 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="current_session_context_class">thread</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/criteria_query_hw?serverTimeZone=UTC</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Alximik12#</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+
+        <mapping class="ma.hibernate.model.Phone"/>
+
+    </session-factory>
+</hibernate-configuration>
